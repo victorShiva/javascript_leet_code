@@ -48,20 +48,20 @@ const numbers = [3, 45, 67, 89, 22, 43, 11, 56, 99, 65];
 
 const arr = [2, 4, 5, 6, 9, 1, 7, 41];
 
-// function findSum(numbers) {
-//     let sum = 0;
-//     for (let i = 0; i < numbers.length; i++) {
-//         sum += numbers[i];
-//     }
-//     return sum;
-// }
-// console.log(findSum(arr));
+function findSum(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return sum;
+}
+console.log(findSum(arr));
 
-// const sum = arr.reduce(function (acc, cur) {
-//     acc = cur + acc;
-//     return acc;
-// }, 0)
-// console.log(sum);
+const sum = arr.reduce(function (acc, cur) {
+    acc = cur + acc;
+    return acc;
+}, 0)
+console.log(sum);
 
 
 
@@ -129,7 +129,7 @@ const agePerson = people.reduce((acc, curr) => {
     return acc;
 }, {})
 
-console.log(agePerson);
+// console.log(agePerson);
 
 
 
@@ -146,4 +146,4 @@ const flterPeople = people.reduce((acc, curr) => {
     }
     return acc;
 }, [])
-console.log(flterPeople);
+// console.log(flterPeople);
