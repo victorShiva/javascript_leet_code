@@ -1,6 +1,6 @@
 
 
-// --------------------   Promise APIs  -->  Promise.all , Promise.  --------------------------
+// --------------------   Promise APIs  -->  Promise.all() , Promise.allSettled() , Promise.race() , Promise.any()  --------------------------
 
 
 

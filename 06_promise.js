@@ -41,7 +41,7 @@ function validateCart(cart) {
 
 
 
-
+/*
 
 const cart = ["shoes", "shirts", "pants", "shorts"];
 
@@ -91,4 +91,26 @@ function proceedToPayment(orderId) {
     })
 }
 
+*/
 
+
+const p1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Promise resolved data! 10");
+    }, 10000)
+});
+
+const p2 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Promise resolved data! 5");
+    }, 5000)
+});
+
+
+p1.then(res => console.log(res))
+
+p2.then(res => console.log(res))
+
+
+setTimeout(() => { console.log("After 4 second"); }, 4000)
+setTimeout(() => { console.log("After 2 second"); }, 2000)
